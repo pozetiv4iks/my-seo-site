@@ -5,4 +5,4 @@ Disallow: /private/
 Allow: /
 
 # Карта сайта
-Sitemap: https://ваш-логин.github.io/my-seo-site/sitemap.xml
+Sitemap: https://pozetiv4iks.github.io/my-seo-site/sitemap.xml
