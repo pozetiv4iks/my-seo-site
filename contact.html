@@ -3,27 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свяжитесь с нами для обсуждения вопросов по SEO-оптимизации и веб-разработке">
     <title>Контакты - Мой SEO Сайт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Наши контакты</h1>
-        <nav>
-            <a href="index.html">Главная</a> | 
-            <a href="about.html">О нас</a> | 
-            <a href="contact.html">Контакты</a>
-        </nav>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">SEOSite</a>
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contact.html">Контакты</a>
+                </nav>
+            </div>
+        </div>
     </header>
     
-    <main>
-        <h2>Свяжитесь с нами</h2>
-        <p>Email: info@example.com</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
-        <p>Адрес: Москва, ул. Примерная, д. 1</p>
-    </main>
+    <div class="container">
+        <main>
+            <h1>Наши контакты</h1>
+            <p>Свяжитесь с нами, если у вас есть вопросы по SEO-оптимизации или веб-разработке.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>📧 Email</h3>
+                    <p>info@seosite-example.com</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📞 Телефон</h3>
+                    <p>+7 (123) 456-78-90</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📍 Адрес</h3>
+                    <p>Москва, ул. Примерная, д. 1</p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Форма обратной связи</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить сообщение</button>
+                </form>
+            </div>
+            
+            <div class="seo-info">
+                <h3>Техническая поддержка</h3>
+                <p>Если вы нашли технические проблемы на сайте или у вас есть предложения по улучшению SEO-оптимизации, пожалуйста, сообщите нам через форму обратной связи.</p>
+            </div>
+        </main>
+    </div>
     
     <footer>
-        <p>&copy; 2025 Мой SEO Сайт</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Мой SEO Сайт. Все права защищены.</p>
+                <p>Проверьте наши метафайлы: 
+                    <a href="robots.txt" style="color: #fff;">robots.txt</a> | 
+                    <a href="sitemap.xml" style="color: #fff;">sitemap.xml</a>
+                </p>
+            </div>
+        </div>
     </footer>
+    
+    <script>
+        document.querySelector('form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо! Ваше сообщение отправлено. (Это демонстрация, форма не настроена на реальную отправку)');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
